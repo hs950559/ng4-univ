@@ -12,7 +12,11 @@ import * as import2 from '@angular/common';
 import * as import3 from '@angular/router';
 import * as import4 from '@angular/platform-browser';
 import * as import5 from '../../../../src/app/app-routing.module';
-import * as import6 from './app.component.ngfactory';
+import * as import6 from './home/home.component.ngfactory';
+import * as import7 from './about/about.component.ngfactory';
+import * as import8 from './app.component.ngfactory';
+import * as import9 from '../../../../src/app/home/home.component';
+import * as import10 from '../../../../src/app/about/about.component';
 class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
   _CommonModule_0:import2.CommonModule;
   _ErrorHandler_1:any;
@@ -63,7 +67,12 @@ class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
   __ROUTER_INITIALIZER_46:any;
   __APP_BOOTSTRAP_LISTENER_47:any[];
   constructor(parent:import0.Injector) {
-    super(parent,[import6.AppComponentNgFactory],[import6.AppComponentNgFactory]);
+    super(parent,[
+      import6.HomeComponentNgFactory,
+      import7.AboutComponentNgFactory,
+      import8.AppComponentNgFactory
+    ]
+    ,[import8.AppComponentNgFactory]);
   }
   get _LOCALE_ID_25():any {
     if ((this.__LOCALE_ID_25 == null)) { (this.__LOCALE_ID_25 = import0.ɵn(this.parent.get(import0.LOCALE_ID,(null as any)))); }
@@ -189,11 +198,25 @@ class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
     this._Location_17 = new import2.Location(this._LocationStrategy_16);
     this._Compiler_18 = new import0.Compiler();
     this._NgModuleFactoryLoader_19 = new import0.SystemJsNgModuleLoader(this._Compiler_18,this.parent.get(import0.SystemJsNgModuleLoaderConfig,(null as any)));
-        this._ROUTES_20 = [[{
-          path: '',
-          children: ([] as any[])
+      this._ROUTES_20 = [[
+        {
+          path: 'home',
+          component: import9.HomeComponent
         }
-    ]];
+        ,
+        {
+          path: 'about',
+          component: import10.AboutComponent
+        }
+        ,
+        {
+          path: '',
+          redirectTo: '/home',
+          pathMatch: 'full'
+        }
+
+      ]
+    ];
     this._Router_21 = import3.ɵe(this._ApplicationRef_9,this._UrlSerializer_13,this._RouterOutletMap_14,this._Location_17,this,this._NgModuleFactoryLoader_19,this._Compiler_18,this._ROUTES_20,this._ROUTER_CONFIGURATION_15,this.parent.get(import3.UrlHandlingStrategy,(null as any)),this.parent.get(import3.RouteReuseStrategy,(null as any)));
     this._RouterModule_22 = new import3.RouterModule(this._ɵa_12,this._Router_21);
     this._AppRoutingModule_23 = new import5.AppRoutingModule();
@@ -258,4 +281,4 @@ class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
   }
 }
 export const AppModuleNgFactory:import0.NgModuleFactory<import1.AppModule> = new import0.NgModuleFactory<any>(AppModuleInjector,import1.AppModule);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovaGsvR0lUSFVCL25nNC11bml2L3NyYy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9oay9HSVRIVUIvbmc0LXVuaXYvc3JjL2FwcC9hcHAubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovaGsvR0lUSFVCL25nNC11bml2L3NyYy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9oay9HSVRIVUIvbmc0LXVuaXYvc3JjL2FwcC9hcHAubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

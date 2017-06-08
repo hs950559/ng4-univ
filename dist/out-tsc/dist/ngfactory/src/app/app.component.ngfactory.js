@@ -9,7 +9,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var import0 = require("./app.component.scss.shim.ngstyle");
 var import1 = require("@angular/core");
 var import2 = require("@angular/router");
-var import3 = require("../../../../src/app/app.component");
+var import3 = require("@angular/common");
+var import4 = require("../../../../src/app/app.component");
 var styles_AppComponent = [import0.styles];
 exports.RenderType_AppComponent = import1.ɵcrt({
     encapsulation: 0,
@@ -18,19 +19,254 @@ exports.RenderType_AppComponent = import1.ɵcrt({
 });
 function View_AppComponent_0(l) {
     return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 4, 'div', [[
-                'style',
-                'text-align:center'
+        (l()(), import1.ɵeld(0, null, null, 39, 'nav', [[
+                'class',
+                'navbar navbar-toggleable-md navbar-light bg-faded fixed-top'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, [
-            '\n        Welcome to ',
-            '!!\n    '
-        ])),
+        (l()(), import1.ɵeld(0, null, null, 3, 'button', [
+            [
+                'aria-controls',
+                'navbarSupportedContent'
+            ],
+            [
+                'aria-expanded',
+                'false'
+            ],
+            [
+                'aria-label',
+                'Toggle navigation'
+            ],
+            [
+                'class',
+                'navbar-toggler navbar-toggler-right'
+            ],
+            [
+                'data-target',
+                '#navbarSupportedContent'
+            ],
+            [
+                'data-toggle',
+                'collapse'
+            ],
+            [
+                'type',
+                'button'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵeld(0, null, null, 0, 'span', [[
+                'class',
+                'navbar-toggler-icon'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n  '])),
+        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵeld(0, null, null, 1, 'a', [
+            [
+                'class',
+                'navbar-brand'
+            ],
+            [
+                'href',
+                '#'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['Navbar'])),
+        (l()(), import1.ɵted(null, ['\n\n    '])),
+        (l()(), import1.ɵeld(0, null, null, 28, 'div', [
+            [
+                'class',
+                'collapse navbar-collapse'
+            ],
+            [
+                'id',
+                'navbarSupportedContent'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n        '])),
+        (l()(), import1.ɵeld(0, null, null, 17, 'ul', [[
+                'class',
+                'navbar-nav mr-auto'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n            '])),
+        (l()(), import1.ɵeld(0, null, null, 6, 'li', [
+            [
+                'class',
+                'nav-item'
+            ],
+            [
+                'routerLinkActive',
+                'active'
+            ]
+        ], null, null, null, null, null)),
+        import1.ɵdid(1720320, null, 2, import2.RouterLinkActive, [
+            import2.Router,
+            import1.ElementRef,
+            import1.Renderer,
+            import1.ChangeDetectorRef
+        ], { routerLinkActive: [
+                0,
+                'routerLinkActive'
+            ]
+        }, null),
+        import1.ɵqud(603979776, 1, { links: 1 }),
+        import1.ɵqud(603979776, 2, { linksWithHrefs: 1 }),
+        (l()(), import1.ɵeld(0, null, null, 2, 'a', [
+            [
+                'class',
+                'nav-link'
+            ],
+            [
+                'routerLink',
+                '/home'
+            ]
+        ], [
+            [
+                1,
+                'target',
+                0
+            ],
+            [
+                8,
+                'href',
+                4
+            ]
+        ], [[
+                null,
+                'click'
+            ]
+        ], function (v, en, $event) {
+            var ad = true;
+            if (('click' === en)) {
+                var pd_0 = (import1.ɵnov(v, 19).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)),
+        import1.ɵdid(671744, [[
+                2,
+                4
+            ]
+        ], 0, import2.RouterLinkWithHref, [
+            import2.Router,
+            import2.ActivatedRoute,
+            import3.LocationStrategy
+        ], { routerLink: [
+                0,
+                'routerLink'
+            ]
+        }, null),
+        (l()(), import1.ɵted(null, ['Home'])),
+        (l()(), import1.ɵted(null, ['\n            '])),
+        (l()(), import1.ɵeld(0, null, null, 6, 'li', [
+            [
+                'class',
+                'nav-item'
+            ],
+            [
+                'routerLinkActive',
+                'active'
+            ]
+        ], null, null, null, null, null)),
+        import1.ɵdid(1720320, null, 2, import2.RouterLinkActive, [
+            import2.Router,
+            import1.ElementRef,
+            import1.Renderer,
+            import1.ChangeDetectorRef
+        ], { routerLinkActive: [
+                0,
+                'routerLinkActive'
+            ]
+        }, null),
+        import1.ɵqud(603979776, 3, { links: 1 }),
+        import1.ɵqud(603979776, 4, { linksWithHrefs: 1 }),
+        (l()(), import1.ɵeld(0, null, null, 2, 'a', [
+            [
+                'class',
+                'nav-link'
+            ],
+            [
+                'routerLink',
+                '/about'
+            ]
+        ], [
+            [
+                1,
+                'target',
+                0
+            ],
+            [
+                8,
+                'href',
+                4
+            ]
+        ], [[
+                null,
+                'click'
+            ]
+        ], function (v, en, $event) {
+            var ad = true;
+            if (('click' === en)) {
+                var pd_0 = (import1.ɵnov(v, 27).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)),
+        import1.ɵdid(671744, [[
+                4,
+                4
+            ]
+        ], 0, import2.RouterLinkWithHref, [
+            import2.Router,
+            import2.ActivatedRoute,
+            import3.LocationStrategy
+        ], { routerLink: [
+                0,
+                'routerLink'
+            ]
+        }, null),
+        (l()(), import1.ɵted(null, ['About'])),
+        (l()(), import1.ɵted(null, ['\n        '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
+        (l()(), import1.ɵeld(0, null, null, 6, 'form', [[
+                'class',
+                'form-inline my-2 my-lg-0'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n            '])),
+        (l()(), import1.ɵeld(0, null, null, 0, 'input', [
+            [
+                'class',
+                'form-control mr-sm-2'
+            ],
+            [
+                'placeholder',
+                'Search'
+            ],
+            [
+                'type',
+                'text'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n            '])),
+        (l()(), import1.ɵeld(0, null, null, 1, 'button', [
+            [
+                'class',
+                'btn btn-outline-success my-2 my-sm-0'
+            ],
+            [
+                'type',
+                'submit'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['Search'])),
+        (l()(), import1.ɵted(null, ['\n        '])),
+        (l()(), import1.ɵted(null, ['\n    '])),
         (l()(), import1.ɵted(null, ['\n'])),
-        (l()(), import1.ɵted(null, ['\n\n'])),
+        (l()(), import1.ɵted(null, ['\n'])),
         (l()(), import1.ɵeld(16777216, null, null, 1, 'router-outlet', [], null, null, null, null, null)),
         import1.ɵdid(147456, null, 0, import2.RouterOutlet, [
             import2.RouterOutletMap,
@@ -41,18 +277,30 @@ function View_AppComponent_0(l) {
                 null
             ]
         ], null, null)
-    ], null, function (ck, v) {
-        var co = v.component;
-        var currVal_0 = co.title;
-        ck(v, 3, 0, currVal_0);
+    ], function (ck, v) {
+        var currVal_0 = 'active';
+        ck(v, 15, 0, currVal_0);
+        var currVal_3 = '/home';
+        ck(v, 19, 0, currVal_3);
+        var currVal_4 = 'active';
+        ck(v, 23, 0, currVal_4);
+        var currVal_7 = '/about';
+        ck(v, 27, 0, currVal_7);
+    }, function (ck, v) {
+        var currVal_1 = import1.ɵnov(v, 19).target;
+        var currVal_2 = import1.ɵnov(v, 19).href;
+        ck(v, 18, 0, currVal_1, currVal_2);
+        var currVal_5 = import1.ɵnov(v, 27).target;
+        var currVal_6 = import1.ɵnov(v, 27).href;
+        ck(v, 26, 0, currVal_5, currVal_6);
     });
 }
 exports.View_AppComponent_0 = View_AppComponent_0;
 function View_AppComponent_Host_0(l) {
     return import1.ɵvid(0, [
         (l()(), import1.ɵeld(0, null, null, 1, 'app-root', [], null, null, null, View_AppComponent_0, exports.RenderType_AppComponent)),
-        import1.ɵdid(49152, null, 0, import3.AppComponent, [], null, null)
+        import1.ɵdid(49152, null, 0, import4.AppComponent, [], null, null)
     ], null, null);
 }
-exports.AppComponentNgFactory = import1.ɵccf('app-root', import3.AppComponent, View_AppComponent_Host_0, {}, {}, []);
+exports.AppComponentNgFactory = import1.ɵccf('app-root', import4.AppComponent, View_AppComponent_Host_0, {}, {}, []);
 //# sourceMappingURL=app.component.ngfactory.js.map

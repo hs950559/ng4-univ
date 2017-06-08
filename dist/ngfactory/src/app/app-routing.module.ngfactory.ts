@@ -10,6 +10,10 @@ import * as import0 from '@angular/core';
 import * as import1 from '../../../../src/app/app-routing.module';
 import * as import2 from '@angular/router';
 import * as import3 from '@angular/common';
+import * as import4 from './home/home.component.ngfactory';
+import * as import5 from './about/about.component.ngfactory';
+import * as import6 from '../../../../src/app/home/home.component';
+import * as import7 from '../../../../src/app/about/about.component';
 class AppRoutingModuleInjector extends import0.ɵNgModuleInjector<import1.AppRoutingModule> {
   _ɵa_0:any;
   _UrlSerializer_1:import2.DefaultUrlSerializer;
@@ -33,7 +37,11 @@ class AppRoutingModuleInjector extends import0.ɵNgModuleInjector<import1.AppRou
   __ROUTER_INITIALIZER_19:any;
   __APP_BOOTSTRAP_LISTENER_20:any[];
   constructor(parent:import0.Injector) {
-    super(parent,([] as any[]),([] as any[]));
+    super(parent,[
+      import4.HomeComponentNgFactory,
+      import5.AboutComponentNgFactory
+    ]
+    ,([] as any[]));
   }
   get _ActivatedRoute_11():any {
     if ((this.__ActivatedRoute_11 == null)) { (this.__ActivatedRoute_11 = import2.ɵf(this._Router_8)); }
@@ -83,11 +91,25 @@ class AppRoutingModuleInjector extends import0.ɵNgModuleInjector<import1.AppRou
     this._LocationStrategy_4 = import2.ɵc(this.parent.get(import3.PlatformLocation),this.parent.get(import3.APP_BASE_HREF,(null as any)),this._ROUTER_CONFIGURATION_3);
     this._Location_5 = new import3.Location(this._LocationStrategy_4);
     this._NgModuleFactoryLoader_6 = new import0.SystemJsNgModuleLoader(this.parent.get(import0.Compiler),this.parent.get(import0.SystemJsNgModuleLoaderConfig,(null as any)));
-        this._ROUTES_7 = [[{
-          path: '',
-          children: ([] as any[])
+      this._ROUTES_7 = [[
+        {
+          path: 'home',
+          component: import6.HomeComponent
         }
-    ]];
+        ,
+        {
+          path: 'about',
+          component: import7.AboutComponent
+        }
+        ,
+        {
+          path: '',
+          redirectTo: '/home',
+          pathMatch: 'full'
+        }
+
+      ]
+    ];
     this._Router_8 = import2.ɵe(this.parent.get(import0.ApplicationRef),this._UrlSerializer_1,this._RouterOutletMap_2,this._Location_5,this,this._NgModuleFactoryLoader_6,this.parent.get(import0.Compiler),this._ROUTES_7,this._ROUTER_CONFIGURATION_3,this.parent.get(import2.UrlHandlingStrategy,(null as any)),this.parent.get(import2.RouteReuseStrategy,(null as any)));
     this._RouterModule_9 = new import2.RouterModule(this._ɵa_0,this._Router_8);
     this._AppRoutingModule_10 = new import1.AppRoutingModule();
@@ -122,4 +144,4 @@ class AppRoutingModuleInjector extends import0.ɵNgModuleInjector<import1.AppRou
   }
 }
 export const AppRoutingModuleNgFactory:import0.NgModuleFactory<import1.AppRoutingModule> = new import0.NgModuleFactory<any>(AppRoutingModuleInjector,import1.AppRoutingModule);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovaGsvR0lUSFVCL25nNC11bml2L3NyYy9hcHAvYXBwLXJvdXRpbmcubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL0Q6L2hrL0dJVEhVQi9uZzQtdW5pdi9zcmMvYXBwL2FwcC1yb3V0aW5nLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovaGsvR0lUSFVCL25nNC11bml2L3NyYy9hcHAvYXBwLXJvdXRpbmcubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL0Q6L2hrL0dJVEhVQi9uZzQtdW5pdi9zcmMvYXBwL2FwcC1yb3V0aW5nLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==

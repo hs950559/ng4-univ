@@ -27,11 +27,19 @@ var import7 = require("@angular/platform-server");
 var import8 = require("../../../../src/app/app-routing.module");
 var import9 = require("../../../../src/app/app.module");
 var import10 = require("@angular/animations/browser");
-var import11 = require("./app.component.ngfactory");
+var import11 = require("./home/home.component.ngfactory");
+var import12 = require("./about/about.component.ngfactory");
+var import13 = require("./app.component.ngfactory");
+var import14 = require("../../../../src/app/home/home.component");
+var import15 = require("../../../../src/app/about/about.component");
 var AppServerModuleInjector = (function (_super) {
     __extends(AppServerModuleInjector, _super);
     function AppServerModuleInjector(parent) {
-        return _super.call(this, parent, [import11.AppComponentNgFactory], [import11.AppComponentNgFactory]) || this;
+        return _super.call(this, parent, [
+            import11.HomeComponentNgFactory,
+            import12.AboutComponentNgFactory,
+            import13.AppComponentNgFactory
+        ], [import13.AppComponentNgFactory]) || this;
     }
     Object.defineProperty(AppServerModuleInjector.prototype, "_BrowserXhr_29", {
         get: function () {
@@ -386,11 +394,22 @@ var AppServerModuleInjector = (function (_super) {
         this._Location_20 = new import3.Location(this._LocationStrategy_19);
         this._Compiler_21 = new import0.Compiler();
         this._NgModuleFactoryLoader_22 = new import0.SystemJsNgModuleLoader(this._Compiler_21, this.parent.get(import0.SystemJsNgModuleLoaderConfig, null));
-        this._ROUTES_23 = [[{
+        this._ROUTES_23 = [[
+                {
+                    path: 'home',
+                    component: import14.HomeComponent
+                },
+                {
+                    path: 'about',
+                    component: import15.AboutComponent
+                },
+                {
                     path: '',
-                    children: []
+                    redirectTo: '/home',
+                    pathMatch: 'full'
                 }
-            ]];
+            ]
+        ];
         this._Router_24 = import4.ɵe(this._ApplicationRef_10, this._UrlSerializer_16, this._RouterOutletMap_17, this._Location_20, this, this._NgModuleFactoryLoader_22, this._Compiler_21, this._ROUTES_23, this._ROUTER_CONFIGURATION_18, this.parent.get(import4.UrlHandlingStrategy, null), this.parent.get(import4.RouteReuseStrategy, null));
         this._RouterModule_25 = new import4.RouterModule(this._ɵa_15, this._Router_24);
         this._AppRoutingModule_26 = new import8.AppRoutingModule();

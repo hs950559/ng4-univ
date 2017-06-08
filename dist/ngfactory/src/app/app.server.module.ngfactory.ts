@@ -17,7 +17,11 @@ import * as import7 from '@angular/platform-server';
 import * as import8 from '../../../../src/app/app-routing.module';
 import * as import9 from '../../../../src/app/app.module';
 import * as import10 from '@angular/animations/browser';
-import * as import11 from './app.component.ngfactory';
+import * as import11 from './home/home.component.ngfactory';
+import * as import12 from './about/about.component.ngfactory';
+import * as import13 from './app.component.ngfactory';
+import * as import14 from '../../../../src/app/home/home.component';
+import * as import15 from '../../../../src/app/about/about.component';
 class AppServerModuleInjector extends import0.ɵNgModuleInjector<import1.AppServerModule> {
   _HttpModule_0:import2.HttpModule;
   _CommonModule_1:import3.CommonModule;
@@ -81,7 +85,12 @@ class AppServerModuleInjector extends import0.ɵNgModuleInjector<import1.AppServ
   __ROUTER_INITIALIZER_59:any;
   __APP_BOOTSTRAP_LISTENER_60:any[];
   constructor(parent:import0.Injector) {
-    super(parent,[import11.AppComponentNgFactory],[import11.AppComponentNgFactory]);
+    super(parent,[
+      import11.HomeComponentNgFactory,
+      import12.AboutComponentNgFactory,
+      import13.AppComponentNgFactory
+    ]
+    ,[import13.AppComponentNgFactory]);
   }
   get _BrowserXhr_29():import7.ɵc {
     if ((this.__BrowserXhr_29 == null)) { (this.__BrowserXhr_29 = new import7.ɵc()); }
@@ -246,11 +255,25 @@ class AppServerModuleInjector extends import0.ɵNgModuleInjector<import1.AppServ
     this._Location_20 = new import3.Location(this._LocationStrategy_19);
     this._Compiler_21 = new import0.Compiler();
     this._NgModuleFactoryLoader_22 = new import0.SystemJsNgModuleLoader(this._Compiler_21,this.parent.get(import0.SystemJsNgModuleLoaderConfig,(null as any)));
-        this._ROUTES_23 = [[{
-          path: '',
-          children: ([] as any[])
+      this._ROUTES_23 = [[
+        {
+          path: 'home',
+          component: import14.HomeComponent
         }
-    ]];
+        ,
+        {
+          path: 'about',
+          component: import15.AboutComponent
+        }
+        ,
+        {
+          path: '',
+          redirectTo: '/home',
+          pathMatch: 'full'
+        }
+
+      ]
+    ];
     this._Router_24 = import4.ɵe(this._ApplicationRef_10,this._UrlSerializer_16,this._RouterOutletMap_17,this._Location_20,this,this._NgModuleFactoryLoader_22,this._Compiler_21,this._ROUTES_23,this._ROUTER_CONFIGURATION_18,this.parent.get(import4.UrlHandlingStrategy,(null as any)),this.parent.get(import4.RouteReuseStrategy,(null as any)));
     this._RouterModule_25 = new import4.RouterModule(this._ɵa_15,this._Router_24);
     this._AppRoutingModule_26 = new import8.AppRoutingModule();
@@ -329,4 +352,4 @@ class AppServerModuleInjector extends import0.ɵNgModuleInjector<import1.AppServ
   }
 }
 export const AppServerModuleNgFactory:import0.NgModuleFactory<import1.AppServerModule> = new import0.NgModuleFactory<any>(AppServerModuleInjector,import1.AppServerModule);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovaGsvR0lUSFVCL25nNC11bml2L3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovaGsvR0lUSFVCL25nNC11bml2L3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovaGsvR0lUSFVCL25nNC11bml2L3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovaGsvR0lUSFVCL25nNC11bml2L3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
