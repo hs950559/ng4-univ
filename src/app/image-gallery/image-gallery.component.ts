@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-image-gallery',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./image-gallery.component.scss']
 })
 export class ImageGalleryComponent {
+
+  constructor(title: Title){
+    title.setTitle('Image Gallery');
+  }
 }
