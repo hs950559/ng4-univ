@@ -14,7 +14,6 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ang4-seo-pre'}),
- 
     AppRoutingModule
   ],
   providers: [],

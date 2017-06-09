@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent
   },
+  {
+    path: 'images',
+    loadChildren: 'app/image-gallery/image-gallery.module#ImageGalleryModule'
+  },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'

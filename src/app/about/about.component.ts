@@ -10,7 +10,7 @@ export class AboutComponent implements OnInit {
 
 constructor(meta: Meta, title: Title) {
 
-    title.setTitle('My Contact Page');
+    title.setTitle('My About Page');
 
     meta.addTags([
       { name: 'author',   content: 'Hemant'},

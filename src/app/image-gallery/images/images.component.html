@@ -1,0 +1,20 @@
+<div class="text-center mt-4">
+    <button class="btn btn-info" [class.active]="filterBy==='all'" (click)="filterBy='all'">All</button>
+    <button class="btn btn-info" [class.active]="filterBy==='cats'" (click)="filterBy='cats'">Cats</button>
+    <button class="btn btn-info" [class.active]="filterBy==='camping'" (click)="filterBy='camping'">Camping</button>
+    <button class="btn btn-info" [class.active]="filterBy==='library'" (click)="filterBy='library'">Library</button>
+</div>
+
+
+<div class="card-columns mt-4">
+    <div class="mb-2" *ngFor="let image of (visibleImages | imageFilter: filterBy)">
+        <div class="card">
+            <a [routerLink]="['/images', image.id]">
+                <img src="{{ image.url }}" class="tn" class="img-fluid">
+            </a>
+            <div class="card-block">
+                <p class="card-text">{{ image.caption }}</p>
+            </div>
+        </div>
+    </div>
+</div>
