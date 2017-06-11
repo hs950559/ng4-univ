@@ -5,6 +5,9 @@
       "/": {
         "match": "prefix"
       },
+      "/home": {
+        "match": "exact"
+      },
       "/about": {
         "match": "exact"
       },
@@ -93,9 +96,9 @@
       "https://hs950559.github.io/ng4-univ/assets/data/data.json": "b31585fadd09cd442d70a7cd7cc505986b65d6ec",
       "https://hs950559.github.io/ng4-univ/assets/fonts/SEGOEUIL.ttf": "c22c9c2e40c3f7b8e9408de337a642d31e4c9374",
       "https://hs950559.github.io/ng4-univ/assets/fonts/SEGOEUIL.woff": "c410a47aba9375d265dbdbc1f27e90cc1cf6905b",
+      "https://hs950559.github.io/ng4-univ/assets/fonts/themify.ttf": "5bb1fe69452a484566a81076af7567728fe7e43b",
       "https://hs950559.github.io/ng4-univ/assets/fonts/themify.eot": "df12a0942cf1933f0915fe3d910fa2379f092d83",
       "https://hs950559.github.io/ng4-univ/assets/fonts/themify.svg": "106a9ed6d6b0936376b5723611a602a2e3da66c6",
-      "https://hs950559.github.io/ng4-univ/assets/fonts/themify.ttf": "5bb1fe69452a484566a81076af7567728fe7e43b",
       "https://hs950559.github.io/ng4-univ/assets/fonts/themify.woff": "9394f35bd2addd24666b79bfc36d4f9d247cb01d",
       "https://hs950559.github.io/ng4-univ/assets/fonts/ufonts.com_segoe_ui_bold.eot": "5c5323f98478eaca516c4e732f539489bfe952b0",
       "https://hs950559.github.io/ng4-univ/assets/fonts/ufonts.com_segoe-ui-bold.woff": "688ba46073642a83b424dc7301967e826583ee78",
@@ -103,8 +106,8 @@
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-192-192.png": "add430161d98f488b052e413fb87b2dc1453c6b8",
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-48-48.png": "b718a9eada7f2ec2ff298685bd457cb2caf17593",
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-512-512.png": "96464374a09124002bd303edcb424772d2b2da9a",
-      "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-72-72.png": "870954ad0692d797b6406fd8ef0b736701d3827b",
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-96-96.png": "01e4d407f5df0ae7c101f17d7f4002d039ae7683",
+      "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-72-72.png": "870954ad0692d797b6406fd8ef0b736701d3827b",
       "https://hs950559.github.io/ng4-univ/assets/icons/chrome/chrome-extensionmanagementpage-48-48.png": "b718a9eada7f2ec2ff298685bd457cb2caf17593",
       "https://hs950559.github.io/ng4-univ/assets/icons/chrome/chrome-favicon-16-16.png": "5ec2b37ac7500bd36f0e175815d64fa9a9103b3d",
       "https://hs950559.github.io/ng4-univ/assets/icons/chrome/chrome-installprocess-128-128.png": "403682337e510659bc30dee477d6844956101a1f",
@@ -149,11 +152,11 @@
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/107.png": "f0ee144d1470923f552935a3f2faa7ebcba596f3",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/108.png": "680d245b92381713a76939d87692710035b09284",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/109.png": "4a14a5557a353f1dc616ef34eb7e9b4e4c329a8c",
+      "https://hs950559.github.io/ng4-univ/assets/images/pokemon/11.png": "225fec3b99288653f9fe5cad6fa76098995c1c65",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/110.png": "a90a9ea80c882f07a0f680dd172b6d195ae84dab",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/111.png": "82bf3a08c95cb7eae76324857794f3e4a203426c",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/112.png": "c13544bd16dbb1bb123ed0f8597c364836b883b9",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/113.png": "1c5545d1d35942cf353fc246d48757a8068f9f46",
-      "https://hs950559.github.io/ng4-univ/assets/images/pokemon/11.png": "225fec3b99288653f9fe5cad6fa76098995c1c65",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/114.png": "58e1cfa07ca7d3749a99eb55d2142e6fe639d193",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/115.png": "32ef8e8efc37e25f3afe444d13a5e77c2a015e6c",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/116.png": "a66d2458eae30a85721e88e7e4ee5d2923b2033e",
@@ -266,8 +269,8 @@
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/77.png": "f8bcf6532a10ffc3306b3497c4fcf572f7100352",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/78.png": "89f3bae4b5b9ce3b1ab1a68318fd0f972f911476",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/79.png": "7bad79816fbd6e2ee9e12e4da302ec8c58f29052",
-      "https://hs950559.github.io/ng4-univ/assets/images/pokemon/80.png": "f134549bf6a7cd4bfc1ab0ef307deaaa230ee792",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/8.png": "e679c28249e929d4fd9c78d297c351682d16dd73",
+      "https://hs950559.github.io/ng4-univ/assets/images/pokemon/80.png": "f134549bf6a7cd4bfc1ab0ef307deaaa230ee792",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/81.png": "79c500db17c650a064a5b2c055fd29b09b2a7287",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/82.png": "bbe053047b4ed1d223e0177486180c913a39b84e",
       "https://hs950559.github.io/ng4-univ/assets/images/pokemon/83.png": "1ab2d47dd349cc64e919a4a1efbda028bccab182",
@@ -292,6 +295,7 @@
       "https://hs950559.github.io/ng4-univ/assets/redirect/redirectfrom.html": "189667e6cdbb9f25c4e1b9b482dec3860434b1c4",
       "https://hs950559.github.io/ng4-univ/assets/redirect/redirectto.html": "3584869bdfb01e335ddffbefa80236a54749fa5d",
       "https://hs950559.github.io/ng4-univ/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+      "https://hs950559.github.io/ng4-univ/manifest.json": "fc72f3e6fd200376ebf9534e4f6cd56de8f583f6",
       "https://hs950559.github.io/ng4-univ/index.html": "fbb5b6ac2c7381772990297ad0d0abdc5b796639"
     },
     "_generatedFromWebpack": true
