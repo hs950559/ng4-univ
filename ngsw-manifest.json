@@ -2,6 +2,9 @@
   "routing": {
     "index": "/index.html",
     "routes": {
+      "/": {
+        "match": "exact"
+      },
       "/home": {
         "match": "exact"
       },
@@ -30,8 +33,8 @@
       "https://hs950559.github.io/ng4-univ/inline.88b39b45ec750ea1fdf2.bundle.js": "f42d7273b19c4b3070cca0433d7a3fe70be4f411",
       "https://hs950559.github.io/ng4-univ/styles.c623e27b9a26665bde11.bundle.css": "64b0d0594c30068c1cd04bdfca1949ac83b7317e",
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-192-192.png": "add430161d98f488b052e413fb87b2dc1453c6b8",
-      "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-144-144.png": "2190c048d3add5d946fddf4ac3a9aa42f9a61f7f",
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-48-48.png": "b718a9eada7f2ec2ff298685bd457cb2caf17593",
+      "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-144-144.png": "2190c048d3add5d946fddf4ac3a9aa42f9a61f7f",
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-512-512.png": "96464374a09124002bd303edcb424772d2b2da9a",
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-72-72.png": "870954ad0692d797b6406fd8ef0b736701d3827b",
       "https://hs950559.github.io/ng4-univ/assets/icons/android/android-launchericon-96-96.png": "01e4d407f5df0ae7c101f17d7f4002d039ae7683",
