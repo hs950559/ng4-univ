@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { ImageGalleryService } from '../image-gallery.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-images',
@@ -12,8 +13,8 @@ export class ImagesComponent implements OnChanges {
   @Input() filterBy? = 'all';
   visibleImages: any[] = [];
 
-  constructor(private imageService: ImageGalleryService) {
-    console.log(this.filterBy)
+  constructor(title: Title, private imageService: ImageGalleryService) {
+    title.setTitle('Images');
     this.visibleImages = this.imageService.getImages();
   }
 

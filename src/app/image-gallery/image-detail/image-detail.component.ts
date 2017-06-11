@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ImageGalleryService } from '../image-gallery.service';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-image-detail',
@@ -11,8 +12,10 @@ export class ImageDetailComponent implements OnInit {
 
   image: any;
 
-  constructor(private imageService: ImageGalleryService,
-    private route: ActivatedRoute) { }
+  constructor(title: Title, private imageService: ImageGalleryService,
+    private route: ActivatedRoute) { 
+          title.setTitle('Image Detail');
+    }
 
   ngOnInit(){
     this.image = this.imageService.getImage(

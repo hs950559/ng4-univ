@@ -18,8 +18,9 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
+      "serviceWorker": true,
       "styles": [
-            "scss/main.scss"
+        "scss/main.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -52,6 +53,7 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {}
+    "component": {
+    }
   }
 }
